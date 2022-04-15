@@ -1,0 +1,44 @@
+{
+    "name": "railway-node-server",
+    "version": "1.0.0",
+    "description": "Backend REST API server for Railway Application",
+    "main": "index.js",
+    "scripts": {
+        "start-dev": "set NODE_ENV=development && node index.js",
+        "start": "npm install && node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Mani030521/RailwayBookingServer.git"
+    },
+    "keywords": [
+        "Railway Booking"
+    ],
+    "author": "Manikandan Arjunan",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt-nodejs": "0.0.3",
+        "body-parser": "^1.18.3",
+        "chai": "^4.1.2",
+        "chai-http": "^4.2.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.16.3",
+        "firebase-admin": "^6.0.0",
+        "jsonwebtoken": "^8.3.0",
+        "mongoose": "^5.2.10",
+        "nodemailer": "^4.6.8",
+        "nodemon": "^2.0.4",
+        "web-push": "^3.3.3"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "6.11.0",
+        "eslint-plugin-import": "^2.20.1",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-react": "^7.19.0",
+        "eslint-plugin-react-hooks": "^2.5.0",
+        "prettier": "2.0.5"
+    }
+}
