@@ -1,7 +1,10 @@
 FROM node:alpine
-
-COPY . /app
-
+RUN addgroup app && adduser -S -G app app
+USER app
 WORKDIR /app
-
-CMD node /index.js
+ENV NAME="Manikandan"
+COPY package*.json .
+RUN npm ci
+COPY . .
+EXPOSE 8000
+CMD node index.js
