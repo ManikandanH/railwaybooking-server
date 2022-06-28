@@ -1,0 +1,9 @@
+version: '3'
+services:
+  admin:
+    build:
+      context: .
+      dockerfile: ./services/admin/Dockerfile
+    command: npm run start -w services/admin
+    ports:
+      - '8000:8000'
