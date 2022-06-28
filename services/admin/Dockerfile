@@ -6,6 +6,6 @@ ENV NAME="Manikandan"
 COPY package.json .
 COPY package*.json .
 RUN npm ci
-COPY . .
+COPY services/admin services/admin
 EXPOSE 8000
-CMD ["node", "index.js"]
+# ENTRYPOINT [ "node", "index.js" ]
